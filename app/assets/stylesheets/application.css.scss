@@ -13,11 +13,21 @@
  */
 
 #footer {
-  position: absolute;
-  bottom: 0;
-  margin: 5px;
+  padding-top: 150px;
+  width: 100px;
+  margin: auto;
+  text-align: center;
 }
 
-a {
+.blacktocat {
+  margin: 15px;
+  width: 32px;
+  height: 32px;
+}
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .blacktocat {
+    width: 16px;
+    height: 16px;
+  }
 }
