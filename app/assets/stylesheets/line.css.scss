@@ -1,3 +1,23 @@
 // Place all the styles related to the line controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.line {
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  font-size: 200%;
+
+  &, div {
+    padding: 10px 0;
+  }
+
+  .message {
+    font-size: 50%;
+    padding: 0;
+  }
+
+  .behind {
+    font-size: 75%;
+  }
+}
