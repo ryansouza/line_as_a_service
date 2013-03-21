@@ -11,9 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130316002215) do
+ActiveRecord::Schema.define(:version => 20130321201740) do
 
   create_table "places", :force => true do |t|
+    t.boolean "reached_front", :default => false
+    t.boolean "redeemed",      :default => false
   end
 
 end
