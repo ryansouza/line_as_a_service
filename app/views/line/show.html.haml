@@ -1,9 +1,14 @@
 .line
-  .on_the_way You are on your way...
-  .in_front
-    .people= @place
-    .message People in front of you
+  - if @place.reached_front?
+    .the_front
+      %h1 YOU'VE REACHED THE FRONT!
+      = link_to "get back in line", get_in_line_path
+  - else
+    .on_the_way You are on your way...
+    .in_front
+      .people= @in_front
+      .message People in front of you
   .behind
-    .people= @total - @place
+    .people= @behind
     .message People behind you
 
